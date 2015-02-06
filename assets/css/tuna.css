@@ -1,0 +1,19 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, STHeiti, Arial;
+	color: #333;
+	text-decoration: none;
+	background-color: #fff;
+	background-image: none;
+}
+::selection {
+	background: #a6e22d;
+	color: #fff;
+}
+#tuna {
+	
+}
+#tunara {
+
+}

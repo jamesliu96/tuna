@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>404 Not Found</title>
+	<style type="text/css">
+	body {
+		background: #0200cd;
+		color: #fff;
+		font-family: monospace, Courier, sans-serif;
+		text-align: center;
+	}
+	h1, h2{
+		background: #b9beb7;
+		color: #000;
+	}
+	h1{
+		font-size: 32px;
+	}
+	h2{
+		font-size: 24px;
+	}
+	pre{
+		font: 20px monospace, Courier, sans-serif;
+		word-wrap: break-word;
+		word-break: normal;
+	}
+	@-moz-keyframes cursor-blink {
+		1% {
+			opacity: 0;
+		}
+		40% {
+			opacity: 0;
+		}
+		60% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@-webkit-keyframes cursor-blink {
+		1% {
+			opacity: 0;
+		}
+		40% {
+			opacity: 0;
+		}
+		60% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@-o-keyframes cursor-blink {
+		1% {
+			opacity: 0;
+		}
+		40% {
+			opacity: 0;
+		}
+		60% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@keyframes cursor-blink {
+		1% {
+			opacity: 0;
+		}
+		40% {
+			opacity: 0;
+		}
+		60% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	.bl::after {
+		content: "_";
+		-webkit-animation: cursor-blink 0.8s linear infinite;
+		-moz-animation: cursor-blink 0.8s linear infinite;
+		-o-animation: cursor-blink 0.8s linear infinite;
+		font: 20px monospace, Courier, sans-serif;
+	}
+	</style>
+	<script type="text/javascript">
+	function home(){
+		window.location.href = window.location.protocol + "//" + window.location.host;
+	}
+	</script>
+</head>
+<body onkeydown="home()">
+	<h1>ERROR 404</h1>
+	<h2>Page Not Found</h2>
+	<pre>The page you were looking for was missing or had never been existed.
+The current browse session will be terminated.
+
+##############################
+#                            #
+#         James Liu          #
+#     Copyright (C) 2015     #
+#                            #
+##############################
+
+Press any key to continue...<span class="bl"></span></pre>
+</body>
+</html>
