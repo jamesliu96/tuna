@@ -1,7 +1,7 @@
 var tuna = document.getElementById("tuna");
 var tunara = document.getElementById("tunara");
 var posts = [];
-var list = '';
+var postlist = '';
 
 var AJAX = function(url, callback) {
 	var xhr = XHR();
@@ -39,9 +39,9 @@ var readPosts = function(list) {
 	var data = (Object.prototype.toString.call(list.data) === "[object Array]") ? list.data : [];
 	for (var i = 0; i < data.length; i++) {
 		posts.push(data[i].name);
-		list += '<p><a href="javascript:void()" onclick="showPost(' + i + ')">' + data[i].name + '</a></p>';
+		postlist += '<p><a href="javascript:void()" onclick="showPost(' + i + ')">' + data[i].name + '</a></p>';
 	}
-	tuna.innerHTML = list;
+	tuna.innerHTML = postlist;
 };
 
 var showPost = function(id) {
@@ -52,6 +52,6 @@ var showPost = function(id) {
 };
 
 var backHome = function() {
-	tuna.innerHTML = list;
+	tuna.innerHTML = postlist;
 	tunara.innerHTML = '';
 };
