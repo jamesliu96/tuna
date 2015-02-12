@@ -1,4 +1,10 @@
-.slider, .slider img {
-	margin-bottom: 0;
-	height: 150px;
+code, pre {
+	color: #555;
+	background-color: #ddd;
+}
+code {
+	padding: 6px;
+}
+pre {
+	padding: 12px;
 }
