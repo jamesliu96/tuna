@@ -5,7 +5,7 @@
 2015/02/09
 
 ## 前言
-ECMAScript 是浏览器脚本语言 javascript 的通用标准。该标准由 ECMA 协会在 1997 年以 ECMA-262 为代号被首次发布。此标准自发布至今共有 5 个官方发布版本，ECMAScript 6 则将成为第 6 个发布版本。
+ECMAScript 是浏览器脚本语言 JavaScript 的通用标准。该标准由 ECMA 协会在 1997 年以 ECMA-262 为代号被首次发布。此标准自发布至今共有 5 个官方发布版本，ECMAScript 6 则将成为第 6 个发布版本。
 
 
 ## 简介
