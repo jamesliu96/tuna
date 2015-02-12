@@ -1,5 +1,4 @@
 var tuna = document.getElementById("tuna");
-var tunara = document.getElementById("tunara");
 var posts = [];
 var postlist = '';
 
@@ -39,19 +38,17 @@ var readPosts = function(list) {
 	var data = (Object.prototype.toString.call(list.data) === "[object Array]") ? list.data : [];
 	for (var i = 0; i < data.length; i++) {
 		posts.push(data[i].name);
-		postlist += '<p><a href="javascript:void()" onclick="showPost(' + i + ')">' + data[i].name + '</a></p>';
+		postlist += '<li class="table-view-cell"><a class="navigate-right" href="javascript:void(0)" onclick="showPost(' + i + ')">' + data[i].name + '</a></li>';
 	}
 	tuna.innerHTML = postlist;
 };
 
 var showPost = function(id) {
 	AJAX("/posts/" + encodeURIComponent(posts[id]), function(data) {
-		tuna.innerHTML = '<p><a href="javascript:void()" onclick="backHome()">&lt; Back</a></p>'
-		tunara.innerHTML = markdown.toHTML(data);
+		tuna.innerHTML = markdown.toHTML(data);
 	});
 };
 
 var backHome = function() {
 	tuna.innerHTML = postlist;
-	tunara.innerHTML = '';
 };

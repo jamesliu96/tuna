@@ -3,27 +3,35 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="content-type" content="text/html">
+	<title>Notes</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="renderer" content="webkit">
-	<meta http-equiv="x-dns-prefetch-control" content="on">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
 	<meta name="author" content="James Liu">
 	<meta name="description" content="Tuna">
 	<meta name="keywords" content="tuna">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Tuna</title>
-	<link rel="dns-prefetch" href="//jserovo.com/">
-	<link rel="dns-prefetch" href="//tuna.jserovo.com/">
-	<link rel="dns-prefetch" href="//www.google-analytics.com/">
-	<link rel="canonical" href="http://jserovo.com/">
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-	<link rel="icon" type="image/png" href="tuna.png">
-	<link rel="stylesheet" type="text/css" href="assets/css/tuna.css">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700">
+	<link rel="stylesheet" href="assets/css/ratchet.min.css">
+	<link rel="stylesheet" href="assets/css/ratchet-theme-android.min.css">
+	<link rel="stylesheet" href="assets/css/tuna.css">
+	<script src="assets/js/ratchet.min.js"></script>
 </head>
 <body>
-	<div id="tuna"></div>
-	<div id="tunara"></div>
-	<script type="text/javascript" src="assets/js/markdown.min.js"></script>
-	<script type="text/javascript" src="assets/js/tuna.js"></script>
-	<script type="text/javascript" src="https://api.github.com/repos/jamesliu96/tuna/contents/posts?callback=readPosts&ref=gh-pages"></script>
+	<header class="bar bar-nav">
+		<a href="javascript:void(0)" onclick="backHome()">
+			<h1 class="title">
+				<span class="icon icon-star"></span>
+				Tuna
+			</h1>
+		</a>
+	</header>
+	<div class="content">
+		<ul class="table-view tuna"></ul>
+	</div>
 </body>
+<script type="text/javascript" src="assets/js/markdown.min.js"></script>
+<script type="text/javascript" src="assets/js/tuna.js"></script>
+<script type="text/javascript" src="https://api.github.com/repos/jamesliu96/tuna/contents/posts?callback=readPosts&ref=gh-pages"></script>
 </html>
