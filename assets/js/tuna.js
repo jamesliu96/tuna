@@ -44,7 +44,7 @@ var readPosts = function(list) {
 };
 
 var showPost = function(id) {
-	AJAX("/posts/" + encodeURIComponent(posts[id]), function(data) {
+	AJAX("posts/" + encodeURIComponent(posts[id]), function(data) {
 		tuna.innerHTML = markdown.toHTML(data);
 	});
 };
